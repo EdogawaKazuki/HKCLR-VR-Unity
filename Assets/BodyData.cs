@@ -7,9 +7,11 @@ public class BodyData : MonoBehaviour
     public bool _hasData = false;
     public bool _dataChangedSinceLastQuery = false;
     private OVRPlugin.BodyState _bodyState;
+    private RobotUDPClient RobotUDPClient;
     // Start is called before the first frame update
     void Start()
     {
+        RobotUDPClient = GetComponent<RobotUDPClient>();
         
     }
 
@@ -24,10 +26,18 @@ public class BodyData : MonoBehaviour
             transform.localRotation = new Quaternion(_bodyState.JointLocations[5].Pose.Orientation.x, _bodyState.JointLocations[5].Pose.Orientation.y, _bodyState.JointLocations[5].Pose.Orientation.z, _bodyState.JointLocations[5].Pose.Orientation.w);
             // Debug.Log("BodyData: " + _bodyState.JointLocations[5].Pose);
             // Debug.Log("Body angle: " + transform.rotation.eulerAngles.y);
+
         }
         else
         {
             _hasData = false;
+        }
+    }
+    void FixedUpdate()
+    {
+        if(_dataChangedSinceLastQuery){
+            // todo RobotUDPClient.SendVelCmd(js_linear, js_angular);
+
         }
     }
 
