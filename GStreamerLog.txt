@@ -1,0 +1,42 @@
+[16:39:12] Info: Render API: 2
+[16:39:12] mray_gstreamer_initialize
+[16:39:12] Initializing GStreamer Engine
+[16:39:12] Initializing GStreamer Engine - Done
+[16:39:12] Initializing GStreamer
+[16:39:12] GStreamerCore - Registering Elements!
+[16:39:12] GStreamerCore - GStreamer inited
+[16:39:12] Initializing GStreamer - Done
+[16:39:12] Entering main loop
+[16:39:12] Info: Creating Pipeline: udpsrc port=9200 ! application/x-rtp ! rtph264depay ! decodebin ! video/x-raw,format=I420 ! videoconvert ! appsink name=videoSink
+[16:39:12] Info: : GstPipelineHandler::CreatePipeline 
+[16:39:12] Info: : Pipeline State Changes:  GST_STATE_NULL--> GST_STATE_READY
+[16:39:12] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[16:39:12] Warning: Can't seek to invalid time
+[16:39:12] Info: : Playing
+[16:39:33] Info: : GstPipelineHandler::Stop 
+[16:39:33] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_READY
+[16:39:33] Info: : GstPipelineHandler::Close 
+[16:39:33] Info: : GstPipelineHandler::Stop 
+[16:39:33] Info: : GstPipelineHandler::Close 
+[16:39:33] Info: : GstPipelineHandler::Stop 
+[16:39:33] Info: : GstPipelineHandler::Close 
+[16:39:33] Info: : GstPipelineHandler::Stop 
+[16:39:33] Info: Checking is active
+[16:39:41] mray_gstreamer_initialize
+[16:39:41] Info: Creating Pipeline: udpsrc port=9200 ! application/x-rtp ! rtph264depay ! decodebin ! video/x-raw,format=I420 ! videoconvert ! appsink name=videoSink
+[16:39:41] Info: : GstPipelineHandler::CreatePipeline 
+[16:39:41] Info: : Pipeline State Changes:  GST_STATE_NULL--> GST_STATE_READY
+[16:39:41] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[16:39:41] Info: : Playing
+[16:39:41] Info: : Playing
+[16:39:45] Info: : GstPipelineHandler::Stop 
+[16:39:45] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_READY
+[16:39:45] Info: : GstPipelineHandler::Close 
+[16:39:45] Info: : GstPipelineHandler::Stop 
+[16:39:45] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[16:39:45] Warning: Can't seek to invalid time
+[16:39:45] Info: : GstPipelineHandler::Close 
+[16:39:45] Info: : GstPipelineHandler::Stop 
+[16:39:45] Info: : GstPipelineHandler::Close 
+[16:39:45] Info: : GstPipelineHandler::Stop 
+[16:39:45] Info: Checking is active
