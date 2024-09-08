@@ -1,42 +1,107 @@
-[16:39:12] Info: Render API: 2
-[16:39:12] mray_gstreamer_initialize
-[16:39:12] Initializing GStreamer Engine
-[16:39:12] Initializing GStreamer Engine - Done
-[16:39:12] Initializing GStreamer
-[16:39:12] GStreamerCore - Registering Elements!
-[16:39:12] GStreamerCore - GStreamer inited
-[16:39:12] Initializing GStreamer - Done
-[16:39:12] Entering main loop
-[16:39:12] Info: Creating Pipeline: udpsrc port=9200 ! application/x-rtp ! rtph264depay ! decodebin ! video/x-raw,format=I420 ! videoconvert ! appsink name=videoSink
-[16:39:12] Info: : GstPipelineHandler::CreatePipeline 
-[16:39:12] Info: : Pipeline State Changes:  GST_STATE_NULL--> GST_STATE_READY
-[16:39:12] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
-[16:39:12] Warning: Can't seek to invalid time
-[16:39:12] Info: : Playing
-[16:39:33] Info: : GstPipelineHandler::Stop 
-[16:39:33] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_READY
-[16:39:33] Info: : GstPipelineHandler::Close 
-[16:39:33] Info: : GstPipelineHandler::Stop 
-[16:39:33] Info: : GstPipelineHandler::Close 
-[16:39:33] Info: : GstPipelineHandler::Stop 
-[16:39:33] Info: : GstPipelineHandler::Close 
-[16:39:33] Info: : GstPipelineHandler::Stop 
-[16:39:33] Info: Checking is active
-[16:39:41] mray_gstreamer_initialize
-[16:39:41] Info: Creating Pipeline: udpsrc port=9200 ! application/x-rtp ! rtph264depay ! decodebin ! video/x-raw,format=I420 ! videoconvert ! appsink name=videoSink
-[16:39:41] Info: : GstPipelineHandler::CreatePipeline 
-[16:39:41] Info: : Pipeline State Changes:  GST_STATE_NULL--> GST_STATE_READY
-[16:39:41] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
-[16:39:41] Info: : Playing
-[16:39:41] Info: : Playing
-[16:39:45] Info: : GstPipelineHandler::Stop 
-[16:39:45] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_READY
-[16:39:45] Info: : GstPipelineHandler::Close 
-[16:39:45] Info: : GstPipelineHandler::Stop 
-[16:39:45] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
-[16:39:45] Warning: Can't seek to invalid time
-[16:39:45] Info: : GstPipelineHandler::Close 
-[16:39:45] Info: : GstPipelineHandler::Stop 
-[16:39:45] Info: : GstPipelineHandler::Close 
-[16:39:45] Info: : GstPipelineHandler::Stop 
-[16:39:45] Info: Checking is active
+[15:45:53] Info: Render API: 2
+[15:45:53] mray_gstreamer_initialize
+[15:45:53] Initializing GStreamer Engine
+[15:45:53] Initializing GStreamer Engine - Done
+[15:45:53] Initializing GStreamer
+[15:45:53] GStreamerCore - Registering Elements!
+[15:45:53] GStreamerCore - GStreamer inited
+[15:45:53] Initializing GStreamer - Done
+[15:45:53] Entering main loop
+[15:45:53] Warning: Trying to link elements videoconvert1 and videoSink that don't share a common ancestor: videoSink hasn't been added to a bin or pipeline, and videoconvert1 is in pipeline0
+[15:45:53] Warning: Trying to link elements videoconvert1 and videoSink that don't share a common ancestor: videoSink hasn't been added to a bin or pipeline, and videoconvert1 is in pipeline0
+[15:45:53] Info: Creating Pipeline: udpsrc port=9000 ! application/x-rtp,encoding-name=H264 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! appsink name=videoSink ! video/x-raw,format=I420 ! videoconvert ! appsink name=videoSink
+[15:45:53] Error: GstCustomVideoPlayer: Pipeline error: could not link videoSink to videoconvert1, videoSink can't handle caps video/x-raw, format=(string)I420
+[15:45:53] Info: : GstPipelineHandler::CreatePipeline 
+[15:45:53] Info: : Pipeline State Changes:  GST_STATE_NULL--> GST_STATE_READY
+[15:45:53] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[15:45:53] Warning: Can't seek to invalid time
+[15:45:53] Info: : Playing
+[15:51:04] Info: : GstPipelineHandler::Stop 
+[15:51:04] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_READY
+[15:51:04] Info: : GstPipelineHandler::Close 
+[15:51:04] Info: : GstPipelineHandler::Stop 
+[15:51:04] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[15:51:04] Warning: Can't seek to invalid time
+[15:51:04] Info: : GstPipelineHandler::Close 
+[15:51:04] Info: : GstPipelineHandler::Stop 
+[15:51:04] Info: : GstPipelineHandler::Close 
+[15:51:04] Info: : GstPipelineHandler::Stop 
+[15:51:04] Info: Checking is active
+[15:58:06] mray_gstreamer_initialize
+[15:58:06] Warning: Trying to link elements videoconvert3 and videoSink that don't share a common ancestor: videoSink hasn't been added to a bin or pipeline, and videoconvert3 is in pipeline1
+[15:58:06] Warning: Trying to link elements videoconvert3 and videoSink that don't share a common ancestor: videoSink hasn't been added to a bin or pipeline, and videoconvert3 is in pipeline1
+[15:58:06] Info: Creating Pipeline: udpsrc port=9000 ! application/x-rtp,encoding-name=H264 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! appsink name=videoSink ! video/x-raw,format=I420 ! videoconvert ! appsink name=videoSink
+[15:58:06] Error: GstCustomVideoPlayer: Pipeline error: could not link videoSink to videoconvert3, videoSink can't handle caps video/x-raw, format=(string)I420
+[15:58:06] Info: : GstPipelineHandler::CreatePipeline 
+[15:58:06] Info: : Pipeline State Changes:  GST_STATE_NULL--> GST_STATE_READY
+[15:58:06] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[15:58:06] Warning: Can't seek to invalid time
+[15:58:06] Info: : Playing
+[15:58:06] Info: : Playing
+[15:58:06] Warning: : GstPipelineHandler::HandleMessage(): warning in module videoSink  reported: Pipeline construction is invalid, please add queues.
+[15:58:06] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_PLAYING
+[15:59:07] Info: : Pausing
+[15:59:07] Info: : Pipeline State Changes:  GST_STATE_PLAYING--> GST_STATE_PAUSED
+[15:59:07] Info: : GstPipelineHandler::Stop 
+[15:59:07] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_READY
+[15:59:07] Info: : GstPipelineHandler::Close 
+[15:59:07] Info: : GstPipelineHandler::Stop 
+[15:59:07] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[15:59:07] Warning: Can't seek to invalid time
+[15:59:07] Info: : GstPipelineHandler::Close 
+[15:59:07] Info: : GstPipelineHandler::Stop 
+[15:59:07] Info: : GstPipelineHandler::Close 
+[15:59:07] Info: : GstPipelineHandler::Stop 
+[15:59:07] Info: Checking is active
+[15:59:33] mray_gstreamer_initialize
+[15:59:33] Warning: Trying to link elements videoconvert5 and videoSink that don't share a common ancestor: videoSink hasn't been added to a bin or pipeline, and videoconvert5 is in pipeline2
+[15:59:33] Warning: Trying to link elements videoconvert5 and videoSink that don't share a common ancestor: videoSink hasn't been added to a bin or pipeline, and videoconvert5 is in pipeline2
+[15:59:33] Info: Creating Pipeline: udpsrc port=9000 ! application/x-rtp,encoding-name=H264 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! appsink name=videoSink ! video/x-raw,format=I420 ! videoconvert ! appsink name=videoSink
+[15:59:33] Error: GstCustomVideoPlayer: Pipeline error: could not link videoSink to videoconvert5, videoSink can't handle caps video/x-raw, format=(string)I420
+[15:59:33] Info: : GstPipelineHandler::CreatePipeline 
+[15:59:33] Info: : Pipeline State Changes:  GST_STATE_NULL--> GST_STATE_READY
+[15:59:33] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[15:59:33] Warning: Can't seek to invalid time
+[15:59:33] Info: : Playing
+[15:59:33] Info: : Playing
+[15:59:33] Warning: : GstPipelineHandler::HandleMessage(): warning in module videoSink  reported: Pipeline construction is invalid, please add queues.
+[15:59:33] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_PLAYING
+[16:01:47] Info: : Pausing
+[16:01:47] Info: : Pipeline State Changes:  GST_STATE_PLAYING--> GST_STATE_PAUSED
+[16:01:47] Info: : GstPipelineHandler::Stop 
+[16:01:47] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_READY
+[16:01:47] Info: : GstPipelineHandler::Close 
+[16:01:47] Info: : GstPipelineHandler::Stop 
+[16:01:47] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[16:01:47] Warning: Can't seek to invalid time
+[16:01:47] Info: : GstPipelineHandler::Close 
+[16:01:47] Info: : GstPipelineHandler::Stop 
+[16:01:47] Info: : GstPipelineHandler::Close 
+[16:01:47] Info: : GstPipelineHandler::Stop 
+[16:01:47] Info: Checking is active
+[16:03:52] mray_gstreamer_initialize
+[16:03:52] Warning: Trying to link elements videoconvert7 and videoSink that don't share a common ancestor: videoSink hasn't been added to a bin or pipeline, and videoconvert7 is in pipeline3
+[16:03:52] Warning: Trying to link elements videoconvert7 and videoSink that don't share a common ancestor: videoSink hasn't been added to a bin or pipeline, and videoconvert7 is in pipeline3
+[16:03:52] Info: Creating Pipeline: udpsrc port=9000 ! application/x-rtp,encoding-name=H264 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! appsink name=videoSink ! video/x-raw,format=I420 ! videoconvert ! appsink name=videoSink
+[16:03:52] Error: GstCustomVideoPlayer: Pipeline error: could not link videoSink to videoconvert7, videoSink can't handle caps video/x-raw, format=(string)I420
+[16:03:52] Info: : GstPipelineHandler::CreatePipeline 
+[16:03:52] Info: : Pipeline State Changes:  GST_STATE_NULL--> GST_STATE_READY
+[16:03:52] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[16:03:52] Warning: Can't seek to invalid time
+[16:03:52] Info: : Playing
+[16:03:52] Info: : Playing
+[16:03:52] Warning: : GstPipelineHandler::HandleMessage(): warning in module videoSink  reported: Pipeline construction is invalid, please add queues.
+[16:03:52] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_PLAYING
+[16:13:40] Info: : Pausing
+[16:13:40] Info: : Pipeline State Changes:  GST_STATE_PLAYING--> GST_STATE_PAUSED
+[16:13:40] Info: : GstPipelineHandler::Stop 
+[16:13:40] Info: : Pipeline State Changes:  GST_STATE_PAUSED--> GST_STATE_READY
+[16:13:41] Info: : GstPipelineHandler::Close 
+[16:13:41] Info: : GstPipelineHandler::Stop 
+[16:13:41] Info: : Pipeline State Changes:  GST_STATE_READY--> GST_STATE_PAUSED
+[16:13:41] Warning: Can't seek to invalid time
+[16:13:41] Info: : GstPipelineHandler::Close 
+[16:13:41] Info: : GstPipelineHandler::Stop 
+[16:13:41] Info: : GstPipelineHandler::Close 
+[16:13:41] Info: : GstPipelineHandler::Stop 
+[16:13:41] Info: Checking is active
